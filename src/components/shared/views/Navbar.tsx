@@ -14,7 +14,7 @@ const Navbar = () =>{
             </div>
             <ul className="flex  items-center space-x-7   font-semibold text-lg text-blue-600 relative  ">
                 {NavbarArray.map((item: NavbarItemType, index:number)=>(
-                  <li className='flex items-center  hover:bg-gray-100 group '>
+                  <li key={index} className='flex items-center  hover:bg-gray-100 group  '>
                     <Link href={item.href}> {item.label}</Link>
                     {item.isDropdown?<HiOutlineChevronDown className='mt-1 -rotate-180 group-hover:rotate-0  hover:duration-300 hover:cursor-pointer' size={16}/>:""}
                     { item.isDropdown && <div className=' invisible group-hover:visible absolute gap-1 top-6   py-2 px-4 text-lg min-w-[6.5rem] border bg-gray-100 font-light'>
