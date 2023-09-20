@@ -1,6 +1,6 @@
 "use client"
 import {MdClose} from "react-icons/md"
-import {GiHamburgerMenu} from "react-icons/Gi"
+import {RxHamburgerMenu} from "react-icons/rx"
 import {useState} from "react"
 import Mobile from '@/components/all functions/Navbar/item/mobile';
 import {BsCart2  } from 'react-icons/bs';
@@ -54,7 +54,7 @@ const Navbar = () =>{
 </div>
   :
         <div className='flex lg:hidden'>
-    <GiHamburgerMenu size={25}/>
+    <RxHamburgerMenu size={25}/>
     </div>
 }
 </div>
