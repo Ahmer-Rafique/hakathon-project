@@ -1,6 +1,7 @@
 import { FC } from "react"
-import { NavbarItemType } from "@/components/all functions/Navbar/item/Arry"
+
 import Link from "next/link"
+import { NavbarItemType } from "../../allfunctions/Navbar/item/Arry"
 
 const DropDown:FC<{item: NavbarItemType}> = ({item}) => {
   return (
