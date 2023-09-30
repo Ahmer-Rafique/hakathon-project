@@ -4,7 +4,7 @@ import { HeroGirlimg } from "../../components/assets/insex";
 const Hero = () => {
   const btntext = "Start\n shopping"
   return (
-    <div className=" py-6 flex justify-between px-2 items-center">
+    <div className=" py-6 flex justify-between px-2 items-center PX-2">
         {/* left side */}
       <div className="space-y-5 max-w-sm">
         <button className="bg-pink-100 h-10 w-24 hover:bg-pink-200 rounded-md font-medium text-blue-900 ">Sale 70%</button>
