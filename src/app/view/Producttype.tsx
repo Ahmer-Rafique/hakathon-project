@@ -44,7 +44,7 @@ const Producttype = () => {
              <h3 className="text-4xl font-bold" >GET 30% Off</h3>
             <p>USE PROMO CODE</p>
             <button
-            aria-label="Redirect user to Dine Week End "
+            aria-label="Redirect user to Dine Week End SALE "
             className="py-1 px-8 text-lg font-semibold bg-[#474747] rounded-lg tracking-widest">
               DINEWEEKENDSALE
             </button>
