@@ -8,9 +8,9 @@ const Producttype = () => {
          <p className="text-purple-800 text-sm">PROMOTIONS</p>
          <h3 className="text-3xl text-gray-800 font-bold py-3 ">Our Promotions Events </h3>
         </div>
-        <div className="grid grid-cols-4 gap-5 px-2 text-gray-800" >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-2 text-gray-800" >
           {/* First Grid */}
-          <div className="w-full  flex col-span-2 px-12 bg-cat1" >
+          <div className="w-full  flex flex-col items-center sm:flex-row justify-between col-span-1 md:col-span-2 px-12 bg-cat1" >
            <div className="max-w-[13rem] py-8">
             <h4 className="text-3xl font-extrabold">GET UP TO 60%</h4>
             <p className="text-xl">For the summer season</p>
@@ -20,7 +20,7 @@ const Producttype = () => {
            </div>
           </div>
           {/* Second Grid */}
-          <div className="w-full row-span-2 h-full bg-cat3">
+          <div className="w-full row-span-1 md:row-span-2 flex  flex-col items-center h-full bg-cat3">
           <div className="text-lg px-14 py-4">
               <p>Flex Sweatshirt</p>
               <p> <del>$100.00</del> &nbsp; <b><ins>$75.00</ins></b></p>
@@ -30,7 +30,7 @@ const Producttype = () => {
             </div>
           </div>
           {/* Third Grid */}
-          <div className="w-full row-span-2 h-full bg-cat4">
+          <div className="w-full row-span-1 flex items-center flex-col md:row-span-2 h-full bg-cat4">
           <div className="text-lg px-14 py-4">
               <p>Flex Sweatshirt</p>
               <p> <del>$225.00</del> &nbsp; <b><ins>$190.00</ins></b></p>
@@ -40,7 +40,7 @@ const Producttype = () => {
             </div>
           </div>
           {/* Fourth Grid */}
-          <div className="w-full col-span-2 space-y-3 bg-cat2 text-white flex-col flex justify-center items-center py-9 ">
+          <div className="w-full col-auto md:col-span-2 space-y-3 bg-cat2 text-white flex-col flex justify-center items-center py-9 ">
              <h3 className="text-4xl font-bold" >GET 30% Off</h3>
             <p>USE PROMO CODE</p>
             <button

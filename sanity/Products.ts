@@ -1,7 +1,7 @@
 export default {
-    name: 'pet',
+    name: 'Products',
     type: 'document',
-    title: 'Pet',
+    title: 'Products',
     fields: [
         {
             name: 'productName',
