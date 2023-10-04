@@ -60,7 +60,7 @@ const ProductCarousel: FC<{ Product: Array<oneProductType> }> = ({ Product }) =>
                 onTouchEnd={mouseUp}
             >
                 {dataToItrate.map((item: oneProductType, index: number) => (
-                    <Card key={index + 4} singleProductData={item} />
+                    <Card key={index } singleProductData={item} />
                 ))}
             </div>
         </div>
