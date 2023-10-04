@@ -8,9 +8,17 @@ const nextConfig = {
                 port: "",
                 pathname: "/**",
             },
-           
+            //cdn.sanity.io
+            {
+                protocol: "https",
+                hostname: "cdn.sanity.io",
+                port: "",
+                pathname: "/**",
+            },
         ],
-    }
+    },
+   
+   
 }
 
 module.exports = nextConfig
