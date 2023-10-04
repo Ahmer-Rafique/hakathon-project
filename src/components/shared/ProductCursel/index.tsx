@@ -8,7 +8,6 @@ const ProductCarousel: FC<{ Product: Array<oneProductType> }> = ({ Product }) =>
     let initialX: number;
     let isDragging = false;
     let tabBox: any;
-
     const isBrowser = () => typeof window !== "undefined";
 
     if (isBrowser()) {
@@ -43,7 +42,6 @@ const ProductCarousel: FC<{ Product: Array<oneProductType> }> = ({ Product }) =>
         initialX = e.touches[0].clientX;
     };
     let dataToItrate = Product.slice(0, 3);
-
     return (
         <div className="space-y-4">
             <div className="text-center space-y-3">
@@ -60,7 +58,7 @@ const ProductCarousel: FC<{ Product: Array<oneProductType> }> = ({ Product }) =>
                 onTouchEnd={mouseUp}
             >
                 {dataToItrate.map((item: oneProductType, index: number) => (
-                    <Card key={index } singleProductData={item} />
+                    <Card key={index + 4} singleProductData={item} />
                 ))}
             </div>
         </div>
