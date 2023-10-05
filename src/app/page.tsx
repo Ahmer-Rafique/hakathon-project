@@ -1,8 +1,7 @@
 import Hero from './view/Hero'
 import Producttype from './view/Producttype'
-
+import BASE_PATH_FORAPI from '../components/shared/path';
 import ProductCarousel from '../components/shared/ProductCursel';
-import BASE_PATH_FORAPI from '../components/shared/base';
 async function fetchAllPriductsData(){
   let res = await fetch(` ${BASE_PATH_FORAPI}/api/products`);
   if(!res.ok){
