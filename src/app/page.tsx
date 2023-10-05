@@ -11,7 +11,7 @@ async function fetchAllPriductsData(){
 }
 export default async function Home() {
     let { response } = await fetchAllPriductsData();
-    //console.log(response);
+   
   return (
     <div  >
         <Hero/>  
