@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import imageUrlBuilder from '@sanity/image-url'
 import React, { FC } from 'react'
-import { client } from '../../sanity/lib/client';
+import { client } from '../clients/sanityClient';
 import { oneProductType } from './allfunctions/ProductsDataArrayAndType';
 
 const builder = imageUrlBuilder(client);
