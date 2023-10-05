@@ -1,6 +1,6 @@
 import { createClient } from "next-sanity";
 import { NextResponse } from "next/server";
-import { SanityClient } from "sanity";
+
 import { client } from "../../../../sanity/lib/client";
 export async function GET() {
     try {
