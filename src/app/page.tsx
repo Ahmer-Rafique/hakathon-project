@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Hero from './view/Hero'
 import Producttype from './view/Producttype'
 
