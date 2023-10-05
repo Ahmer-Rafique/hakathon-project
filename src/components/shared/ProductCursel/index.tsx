@@ -5,7 +5,6 @@ import Card from "../../Card";
 
 
 const ProductCarousel: FC<{ Product: Array<oneProductType> }> = ({ Product }) => {
-    let dataToItrate = Product.slice(0, 3);
     return (
         <div className="space-y-4">
             <div className="text-center space-y-3">
@@ -15,7 +14,7 @@ const ProductCarousel: FC<{ Product: Array<oneProductType> }> = ({ Product }) =>
             <div      
                 className="select-none flex gap-4 overflow-x-hidden scrollGrab py-4 overflow-y-hidden"   
             >
-                {dataToItrate.map((item: oneProductType, index: number) => (
+                {Product.map((item: oneProductType, index: number) => (
                     <Card key={index} singleProductData={item} />
                 ))}
             </div>
