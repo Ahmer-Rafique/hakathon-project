@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import imageUrlBuilder from '@sanity/image-url'
 import React, { FC } from 'react'
-import Link from 'next/link';
 import { client } from '../../sanity/lib/client';
 import { oneProductType } from './allfunctions/ProductsDataArrayAndType';
 
@@ -20,10 +19,10 @@ const Card: FC<{ singleProductData: oneProductType }> = ({ singleProductData }) 
                 <Image width={1000} height={1000} src={urlFor(singleProductData.image[0]).width(1000).height(1000).url()} alt={singleProductData.image[0].alt} />
             </div>
             <div className='space-y-1 text-gray-600 font-semibold text-lg select-none'>
-                <Link href={`/catalog/${singleProductData.slug.current}`}>
+                
                     <h6>{singleProductData.productName}</h6>
                     <p>${singleProductData.price}</p>
-                </Link>
+                
             </div>
         </div>
     )
