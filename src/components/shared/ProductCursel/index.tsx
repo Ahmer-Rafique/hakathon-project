@@ -42,7 +42,7 @@ const ProductCarousel: FC<{ ProductData: Array<oneProductType> }> = ({ ProductDa
         isDragging = true;
         initialX = e.touches[0].clientX;
     };
-    let dataToItrate = ProductData.slice(0, 3);
+   
 
     return (
         <div className="space-y-4">
@@ -59,7 +59,7 @@ const ProductCarousel: FC<{ ProductData: Array<oneProductType> }> = ({ ProductDa
                 onTouchStart={mouseDownForMobile}
                 onTouchEnd={mouseUp}
             >
-                {dataToItrate!==null&& dataToItrate!==undefined && dataToItrate.map((item: oneProductType, index: number) => (
+                {ProductData!==null&& ProductData!==undefined && ProductData.map((item: oneProductType, index: number) => (
                     <Card key={index + 4} singleProductData={item} />
                 ))}
             </div>
