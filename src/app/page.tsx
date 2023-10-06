@@ -16,7 +16,7 @@ export default async function Home() {
     <div  >
         <Hero/>  
       <Producttype/>
-    <ProductCarousel Product = {response}/>
+    <ProductCarousel ProductData = {response}/>
     </div>
   )
 }
